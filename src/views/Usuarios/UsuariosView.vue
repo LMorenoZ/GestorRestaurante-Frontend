@@ -24,7 +24,7 @@
         </div>
         <div class="col-1 d-flex justify-content-end">
           <a class="navbar-brand" href="#">
-            <img src="media/userIcon.png" alt="Foto de perfil" width="24" height="24">
+            <img src="" alt="Foto de perfil" width="24" height="24">
           </a>
         </div>
       </div>
