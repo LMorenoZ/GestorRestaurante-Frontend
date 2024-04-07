@@ -3,11 +3,13 @@ import { RouterView } from 'vue-router'
 import Navbar from './components/NavBar.vue';
 </script>
 
-<template>
+<template >
 
   <Navbar />
-
-  <RouterView />
+  
+  <div class="container">
+      <RouterView  />
+  </div>
 </template>
 
 <style scoped></style>
