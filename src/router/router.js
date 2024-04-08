@@ -1,13 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/InicioView.vue'
+import InicioView from '../views/InicioView.vue'
 
-export const router = createRouter({
+const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  linkActiveClass: 'active fw-bold',
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'inicio',
+      component: InicioView
     },
     {
       path: '/mesas',
@@ -26,6 +27,33 @@ export const router = createRouter({
       path: '/menu',
       name: 'menu',
       component: () => import('../views/Menu/MenuView.vue')
-    }
+    },
+    {
+      path: '/pedidos',
+      name: 'pedidos',
+      component: () => import('../views/Pedido/PedidosView.vue')
+    },
+    {
+      path: '/informes',
+      name: 'informes',
+      component: () => import('../views/InformesView.vue')
+    },
+    {
+      path: '/usuarios',
+      name: 'usuarios',
+      component: () => import('../views/Usuarios/UsuariosView.vue')
+    },
+    {
+      path: '/usuario/:id',
+      name: 'usuario',
+      component: () => import('../views/Usuarios/UsuarioView.vue')
+    },
+    {
+      path: '/nuevoPedido',
+      name: 'nuevoPedido',
+      component: () => import('../views/Pedido/NuevoPedidoView.vue')
+    },
   ]
 })
+
+export default router

@@ -3,6 +3,12 @@
 </script>
 
 <template>
+
+    <!--- Los enlaces en lugar de ponerlos como '<a href="...">Texto</a>', ponerlos así:
+          <RouterLink to='/direccion'>Texto </RouterLink> como en el ejemplo.
+            Para ver todas las direcciones disponibles, revisar el archivo router/router.js donde dice 'path'
+        -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <RouterLink class="navbar-brand" to="/">Navbar</RouterLink> 
@@ -42,4 +48,6 @@
             </div>
         </div>
     </nav>
+
+
 </template>

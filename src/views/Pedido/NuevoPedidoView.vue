@@ -6,6 +6,7 @@ const router = useRouter();
 </script>
 
 <template>
+
     <h1>Crear nuevo pedido</h1>
 
     <form>

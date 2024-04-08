@@ -20,6 +20,7 @@ getUsuarios()
     <div class="d-flex justify-content-center">
         <div class=" pt-4">
             <UserCard v-for="usuario in usuarios" :key="usuario.UserID" 
+                :id="usuario.UserID"
                 :nombre="usuario.Nombre"
                 :apellido="usuario.Apellido"
                 :foto="usuario.Foto"
